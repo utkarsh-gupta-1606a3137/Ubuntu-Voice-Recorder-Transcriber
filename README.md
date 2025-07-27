@@ -20,12 +20,14 @@ A basic Ubuntu desktop application for voice recording and transcription using P
 ## Installation
 
 1. Install system dependencies:
+
 ```bash
 sudo apt update
 sudo apt install python3-gi python3-gi-cairo gir1.2-gtk-3.0 portaudio19-dev python3-dev
 ```
 
 2. Install Python dependencies:
+
 ```bash
 pip3 install -r requirements.txt
 ```
@@ -38,11 +40,13 @@ pip3 install -r requirements.txt
 python3 setup_secrets.py
 # Then edit secrets_config.py to add your info
 ```
-   - fill in your OpenAI API key and device paths, or run:
+
+- fill in your OpenAI API key and device paths, or run:
 
 ## Usage
 
 Run the application:
+
 ```bash
 python3 main.py
 ```
@@ -56,9 +60,11 @@ python3 main.py
 ## Desktop Integration
 
 To generate a `.desktop` launcher file (using your device paths from secrets_config.py):
+
 ```bash
 python3 generate_desktop_file.py
 ```
+
 This will create `VoiceRecorder.desktop` for easy launching from your desktop environment.
 
 ## Security & Configuration
