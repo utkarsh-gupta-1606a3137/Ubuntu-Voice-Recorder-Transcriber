@@ -14,7 +14,10 @@ import requests
 
 
 from whisper_api import WhisperAPI
-from whisper_api_config import OPENAI_API_KEY
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
+from secrets_config import OPENAI_API_KEY
 
 def is_online() -> bool:
     """Check if the device is online by pinging a reliable server"""

@@ -23,6 +23,8 @@ if not os.path.exists(secrets_path):
     else:
         print("Missing secrets_config.example.py template. Please create it manually.")
 
+import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 from secrets_config import OPENAI_API_KEY, MAIN_SCRIPT_PATH, ICON_PATH
 from audio_recorder import AudioRecorder
 from transcription_service import TranscriptionService
