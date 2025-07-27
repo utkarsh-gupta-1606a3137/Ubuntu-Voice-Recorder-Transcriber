@@ -1,0 +1,4 @@
+PyGObject>=3.42.0
+PyAudio>=0.2.11
+vosk>=0.3.45
+pyperclip>=1.8.2
